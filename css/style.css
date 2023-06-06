@@ -30,6 +30,12 @@ body{
     width: 300px;
 }
 
+.form-container-email{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    justify-items: center;
+}
 .logo{
     width: 150px;           /* para separar el logo del texto */
     margin-bottom: 48px;    /* ajusta y alinea al centro */
@@ -71,6 +77,34 @@ body{
 .form{
     display: flex; /*ordena de forma horizontal*/
     flex-direction: column; /*ordena de arriba para abajo*/
+}
+
+.email-image{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.email-image img {
+    width: 80px;
+}
+
+.resend {
+    font-size: var(--sm);
+}
+
+.resend span {
+    color: var(--very-light-pink);
+}
+
+.resend a {
+    color: var(--hospital-gree);
+    text-decoration: none;
 }
 
 .primary-button{
