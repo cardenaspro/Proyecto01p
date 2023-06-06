@@ -49,6 +49,12 @@ body{
     text-align: center; /* centra el texto */
 }
 
+.title-c{
+    font-size: var(--lg);/* Llama variable de tamaño */
+    margin-bottom: 36px;
+    text-align: start; /* centra el texto */
+}
+
 .subtitle{
     color: var(--very-light-pink); /* Var color */
     font-size: var(--md); /*Var Tamaño*/
@@ -77,7 +83,16 @@ body{
     margin-bottom: 22px;
 }
 
+.input-name,.input-emailc,.input-password{
+    margin-bottom: 22px;
+}
+
 .form{
+    display: flex; /*ordena de forma horizontal*/
+    flex-direction: column; /*ordena de arriba para abajo*/
+}
+
+.form div{
     display: flex; /*ordena de forma horizontal*/
     flex-direction: column; /*ordena de arriba para abajo*/
 }
