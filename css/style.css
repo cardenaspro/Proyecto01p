@@ -40,7 +40,7 @@ body{
     width: 150px;           /* para separar el logo del texto */
     margin-bottom: 48px;    /* ajusta y alinea al centro */
     justify-self: center;
-    display: none;          /* para que no aparesca en desktop */
+    display: none;          /*para que no aparesca en desktop */
 }
 
 .title{
@@ -73,10 +73,21 @@ body{
     padding: 6px;/*tamño de las cajita*/
     margin-bottom: 12px;/*separa por la parte de abajo*/
 }
+.input-email{
+    margin-bottom: 22px;
+}
 
 .form{
     display: flex; /*ordena de forma horizontal*/
     flex-direction: column; /*ordena de arriba para abajo*/
+}
+
+.form a{
+    color: var(--hospital-gree);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 52px;
 }
 
 .email-image{
@@ -118,6 +129,19 @@ body{
     font-weight: bold;
     height: 50px;
 }
+
+.secondary-button{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-gree);
+    color: var(--hospital-gree);
+    width: 100%;
+    cursor: pointer; /*cambia el puntero de mause*/
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
 .login-button{
     margin-top: 14px;
     margin-bottom: 30px;
@@ -128,4 +152,11 @@ body{
     .logo {
         display: block;
     }
+
+    /* Parte del reto para que aparesca en la parte final el boton en un movil */
+    .secondary-button {
+		position: absolute;
+		top: 90%;
+		width: 300px;
+	}
 }
