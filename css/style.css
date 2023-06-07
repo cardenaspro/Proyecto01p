@@ -1,177 +1,192 @@
-:root{
-    /* Variables de color */
-    --white: #ffffff;
-    --black: #000000;
-    --very-light-pink: #c7c7c7;
-    --text-input-field: #f7f7f7;
-    --hospital-gree: #acd9b2;
-    /* Variables de tamaño */
-    --sm: 14px;
-    --md: 16px;
-    --lg: 18px;
+:root {
+  /* Variables de color */
+  --white: #ffffff;
+  --black: #000000;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-gree: #acd9b2;
+  /* Variables de tamaño */
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
 }
-body{
-    font-family: 'Quicksand', sans-serif;
-    margin:0;
-
-}
-
-.login{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    /* font-size: 1rem; */
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
 }
 
-.form-container{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    width: 300px;
+.login {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  /* font-size: 1rem; */
 }
 
-.form-container-email{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    width: 300px;
-    justify-items: center;
-}
-.logo{
-    width: 150px;           /* para separar el logo del texto */
-    margin-bottom: 48px;    /* ajusta y alinea al centro */
-    justify-self: center;
-    display: none;          /*para que no aparesca en desktop */
+.form-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
 }
 
-.title{
-    font-size: var(--lg);/* Llama variable de tamaño */
-    margin-bottom: 12px;
-    text-align: center; /* centra el texto */
+.form-container-email {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+  justify-items: center;
+}
+.logo {
+  width: 150px; /* para separar el logo del texto */
+  margin-bottom: 48px; /* ajusta y alinea al centro */
+  justify-self: center;
+  display: none; /*para que no aparesca en desktop */
 }
 
-.title-c{
-    font-size: var(--lg);/* Llama variable de tamaño */
-    margin-bottom: 36px;
-    text-align: start; /* centra el texto */
+.title {
+  font-size: var(--lg); /* Llama variable de tamaño */
+  margin-bottom: 12px;
+  text-align: center; /* centra el texto */
 }
 
-.subtitle{
-    color: var(--very-light-pink); /* Var color */
-    font-size: var(--md); /*Var Tamaño*/
-    font-weight: 300; /*grosor del texto*/
-    margin-top: 0;
-    margin-bottom: 32px;
-    text-align: center;
+.title-c {
+  font-size: var(--lg); /* Llama variable de tamaño */
+  margin-bottom: 36px;
+  text-align: start; /* centra el texto */
 }
 
-.label{
-    font-size: var(--sm);
-    font-weight: bold; /*grosor del texto*/
-    margin-bottom: 4px;
+.subtitle {
+  color: var(--very-light-pink); /* Var color */
+  font-size: var(--md); /*Var Tamaño*/
+  font-weight: 300; /*grosor del texto*/
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
-.input{
-    background-color: var(--text-input-field);
-    border: none; /*Quitar borde por defecto*/
-    border-radius: 8px;
-    height: 30px; /*Dar altura*/
-    font-size: var(--md);
-    padding: 6px;/*tamño de las cajita*/
-    margin-bottom: 12px;/*separa por la parte de abajo*/
-}
-.input-email{
-    margin-bottom: 22px;
+.label {
+  font-size: var(--sm);
+  font-weight: bold; /*grosor del texto*/
+  margin-bottom: 4px;
 }
 
-.input-name,.input-emailc,.input-password{
-    margin-bottom: 22px;
+.input {
+  background-color: var(--text-input-field);
+  border: none; /*Quitar borde por defecto*/
+  border-radius: 8px;
+  height: 30px; /*Dar altura*/
+  font-size: var(--md);
+  padding: 6px; /*tamño de las cajita*/
+  margin-bottom: 12px; /*separa por la parte de abajo*/
+}
+.input-email {
+  margin-bottom: 22px;
 }
 
-.form{
-    display: flex; /*ordena de forma horizontal*/
-    flex-direction: column; /*ordena de arriba para abajo*/
+.input-name,
+.input-emailc,
+.input-password {
+  margin-bottom: 22px;
 }
 
-.form div{
-    display: flex; /*ordena de forma horizontal*/
-    flex-direction: column; /*ordena de arriba para abajo*/
+.form {
+  display: flex; /*ordena de forma horizontal*/
+  flex-direction: column; /*ordena de arriba para abajo*/
+}
+.form-c {
+  display: flex; /*ordena de forma horizontal*/
+  flex-direction: column; /*ordena de arriba para abajo*/
 }
 
-.form a{
-    color: var(--hospital-gree);
-    font-size: var(--sm);
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 52px;
+.form-c div {
+  display: flex; /*ordena de forma horizontal*/
+  flex-direction: column; /*ordena de arriba para abajo*/
 }
 
-.email-image{
-    width: 132px;
-    height: 132px;
-    border-radius: 50%;
-    background-color: var(--text-input-field);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 24px;
+.form a {
+  color: var(--hospital-gree);
+  font-size: var(--sm);
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 52px;
+}
+
+.email-image {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: var(--text-input-field);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
 .email-image img {
-    width: 80px;
+  width: 80px;
 }
 
 .resend {
-    font-size: var(--sm);
+  font-size: var(--sm);
 }
 
 .resend span {
-    color: var(--very-light-pink);
+  color: var(--very-light-pink);
 }
 
 .resend a {
-    color: var(--hospital-gree);
-    text-decoration: none;
+  color: var(--hospital-gree);
+  text-decoration: none;
 }
 
-.primary-button{
-    background-color: var(--hospital-gree);
-    border-radius: 8px;
-    border: none;
-    color: var(--white);
-    width: 100%;
-    cursor: pointer; /*cambia el puntero de mause*/
-    font-size: var(--md);
-    font-weight: bold;
-    height: 50px;
+.primary-button {
+  background-color: var(--hospital-gree);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer; /*cambia el puntero de mause*/
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
 }
 
-.secondary-button{
-    background-color: var(--white);
-    border-radius: 8px;
-    border: 1px solid var(--hospital-gree);
-    color: var(--hospital-gree);
-    width: 100%;
-    cursor: pointer; /*cambia el puntero de mause*/
-    font-size: var(--md);
-    font-weight: bold;
-    height: 50px;
+.secondary-button {
+  background-color: var(--white);
+  border-radius: 8px;
+  border: 1px solid var(--hospital-gree);
+  color: var(--hospital-gree);
+  width: 100%;
+  cursor: pointer; /*cambia el puntero de mause*/
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
 }
 
-.login-button{
-    margin-top: 14px;
-    margin-bottom: 30px;
+.login-button {
+  margin-top: 14px;
+  margin-bottom: 30px;
 }
 
 /* La parte responsive */
 @media (max-width: 640px) {
-    .logo {
-        display: block;
-    }
+  .logo {
+    display: block;
+  }
 
-    /* Parte del reto para que aparesca en la parte final el boton en un movil */
-    .secondary-button {
-		position: absolute;
-		top: 90%;
-		width: 300px;
-	}
+  /* Forma correcta del reto responsivo */
+  .form-container-c {
+    height: 100%;
+  }
+  .form-c {
+    height: 100%;
+    justify-content: space-between;
+  }
+  /* fin del reto */
+
+  /* Parte del reto para que aparesca en la parte final el boton en un movil */
+  .secondary-button {
+    position: absolute;
+    top: 90%;
+    width: 300px;
+  }
 }
