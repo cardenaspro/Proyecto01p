@@ -198,7 +198,7 @@ nav {
 /* Fin menu Mobile */
 
 /* ASIDE Inicio del carrito de compras */
-.product-detail{
+aside{
     background-color: var(--white);
     width: 360px;
     padding: 0 24px;

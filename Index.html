@@ -116,7 +116,7 @@
 
     <!-- Este es la parte del carrito de compras -->
     <!-- Es importante poner "inactive" para ocultar una clase y su contenido -->
-    <aside class="product-detail inactive">
+    <aside id="cartContainer" class="inactive">
         <div class="title-container">
             <img src="img/icons/flechita.svg" alt="arrow">
             <p class="title">My order</p>
@@ -165,7 +165,22 @@
             </button>
         </div>
     </aside>
-
+    <!-- Es la parte del detalle del Producto -->
+    <aside id="productDetail" class="inactive">
+        <div class="product-detail-close">
+            <img src="img/icons/icon_close.png" alt="close">
+        </div>
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bike">
+        <div class="product-info">
+            <p>$35.00</p>
+            <p>Bike</p>
+            <p>width its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
+            <button class="primary-button add-to-cart-button">
+                <img src="img/icons/bt_add_to_cart.svg" alt=" add to cart">
+                Add to cart
+            </button>
+        </div>
+    </aside>
     <!-- Este es la parte de la pagina principal -->
     <!-- Es importante poner "inactive" para ocultar una clase y su contenido -->
     <section class="main-container">

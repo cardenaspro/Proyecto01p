@@ -66,7 +66,6 @@ productList.push({
 
 // Forma para insertar al HTML
 
-
 function renderProducts(arr) {
     for (product of arr) {
         const productCard = document.createElement('div');
