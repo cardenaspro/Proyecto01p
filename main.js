@@ -27,7 +27,7 @@ function toggleMobileMenu() {
 
 /* Para hacer click abrir y cerrar una ventana flotante del CARRITO DE COMPRAS */
 const carritoIcon = document.querySelector('.navbar-shopping-cart');
-const carritoMenu = document.querySelector('.product-detail');
+const carritoMenu = document.querySelector('#cartContainer');
 
 carritoIcon.addEventListener('click', toggleCarritoMenu);
 
@@ -41,6 +41,7 @@ function toggleCarritoMenu() {
 
     carritoMenu.classList.toggle('inactive');
 }
+
 
 /* PARTE DE LA PAGINA PRINCIPAL */
 
@@ -64,8 +65,8 @@ productList.push({
     image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 });
 
-// Forma para insertar al HTML
 
+// Forma para insertar al HTML
 function renderProducts(arr) {
     for (product of arr) {
         const productCard = document.createElement('div');
