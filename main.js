@@ -22,10 +22,12 @@ function toggleMobileMenu() {
         carritoMenu.classList.add('inactive');
     }
 
+    closeProductDetailAside();
+
     mobileMenu.classList.toggle('inactive');
 }
 
-/* Para hacer click abrir y cerrar una ventana flotante del CARRITO DE COMPRAS */
+/* CARRITO DE COMPRAS Para hacer click abrir y cerrar una ventana flotante */
 const carritoIcon = document.querySelector('.navbar-shopping-cart');
 const carritoMenu = document.querySelector('#cartContainer');
 
@@ -38,6 +40,13 @@ function toggleCarritoMenu() {
     if (!isMobileMenuClose) {
         mobileMenu.classList.add('inactive');
     }
+
+    const isProductDetailClose = productDetailContainer.classList.contains('inactive');
+    // Si damos click al menu carrito vamos a cerrar el product detail
+    if (!isProductDetailClose) {
+        productDetailContainer.classList.add('inactive');
+    }
+
 
     carritoMenu.classList.toggle('inactive');
 }
@@ -65,6 +74,26 @@ productList.push({
     image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 });
 
+/* Creacion de Eventos con el Product Detail */
+// Para abrir el product detail tocando a la imagen del producto
+const productDetailContainer = document.querySelector('#productDetail');
+function openProductDetailAside(){
+    // desactiva el carrito menu
+    carritoMenu.classList.add('inactive');
+
+    productDetailContainer.classList.remove('inactive');
+
+}
+
+// para cerrar el porduct detail
+const productDetailIcon = document.querySelector('.product-detail-close');
+productDetailIcon.addEventListener('click', closeProductDetailAside);
+function closeProductDetailAside(){
+    productDetailContainer.classList.add('inactive');
+}
+
+
+
 
 // Forma para insertar al HTML
 function renderProducts(arr) {
@@ -72,9 +101,12 @@ function renderProducts(arr) {
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
 
+        // product = {name, price,image} -> product.image
         const productImg = document.createElement('img');
         productImg.setAttribute('src', product.image);
-        // product = {name, price,image} -> product.image
+        // Evento para abrir el productDetailContainer
+        productImg.addEventListener('click', openProductDetailAside);
+        
 
         const productInfo = document.createElement('div');
         productInfo.classList.add('product-info');
